@@ -35,9 +35,9 @@ if (form) {
     const mesaj = data.get('mesaj');
     const subject = encodeURIComponent('Cerere consultanță contabilă');
     const body = encodeURIComponent(
-      `Nume: ${nume}\nEmail: ${email}\nMesaj:\n${mesaj}\n\nTrimis de pe site.`
+      `Nume: ${nume}\nEmail: ${email}\nMesaj:\n${mesaj}\n`
     );
-    window.location.href = `mailto:hello@asevcont.example?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:virgiand@yahoo.com?subject=${subject}&body=${body}`;
   });
 }
 
