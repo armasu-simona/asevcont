@@ -31,13 +31,12 @@ if (form) {
     e.preventDefault();
     const data = new FormData(form);
     const nume = data.get('nume');
-    const email = data.get('email');
     const mesaj = data.get('mesaj');
     const subject = encodeURIComponent('Cerere consultanță contabilă');
     const body = encodeURIComponent(
-      `Nume: ${nume}\nEmail: ${email}\nMesaj:\n${mesaj}\n`
+      `Nume: ${nume}\nMesaj:\n${mesaj}\n`
     );
-    window.location.href = `mailto:virgiand@yahoo.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:asevcont@gmail.com?subject=${subject}&body=${body}`;
   });
 }
 
